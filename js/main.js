@@ -23,29 +23,47 @@ btnClose.onclick = ( e ) => {
 
 // Function for dropdown
 $(document).ready(function(){
-    $('#btn__servicios__dropdown').click(function(){
+    $('#btn__servicios__dropdown').click(function( e ){
+        e.preventDefault()
         $(this).next('.sub__menu__responsive').slideToggle()
         $(this).find('.dropdown').toggleClass('rotate')
-    });
-});
+    })
+})
 // End function
 
 //Modal
 let btnModal = document.querySelector( '#servicios__modal' )
 let modal = document.querySelector( '#myModal' )
-var span = document.getElementsByClassName("close__modal")[0]
+let span = document.getElementsByClassName("close__modal")[0]
+
+let wrench =  document.querySelector('.wrench')
+let servicio = document.querySelector('.servicio')
 
 btnModal.onclick = ( e ) => {
     e.preventDefault()
+    btnModal.classList.add('activo')
+    wrench.classList.add('activo')
+    servicio.classList.add('activo')
+    removeActive()
     modal.style.display = 'flex'
 }
 span.onclick = ( e ) => {
     e.preventDefault()
     modal.style.display = 'none'
+
+    btnModal.classList.remove('activo');
+    wrench.classList.remove('activo')
+    servicio.classList.remove('activo')
+    setActiveLink()
 }
 window.onclick = ( e ) => {
     if(e.target === modal){
         modal.style.display = 'none'
+
+        btnModal.classList.remove('activo');
+        wrench.classList.remove('activo')
+        servicio.classList.remove('activo')
+        setActiveLink()
     }
 }
 //End Modal
@@ -124,11 +142,79 @@ megaLink.forEach(link => link.onmouseout = ( e ) => {
 })
 
 let mq = window.matchMedia('(min-width: 768px)')
-let img = document.querySelector('#img__logo') 
-
 const screenTest = ( e ) => {
     if(e.matches){
         ( sidebar.classList.contains('open') ) ? sidebar.classList.remove('open') : null
     }
 }
 mq.addListener(screenTest)
+
+
+const setActiveLink = () => {
+    let urlActual = window.location.pathname;
+    switch(urlActual){
+        case "/index.html":
+            document.querySelector('#link__home').classList.add('activo')
+            document.querySelector('.fa-house').classList.add('activo')
+            document.querySelector('.inicio').classList.add('activo')
+        break;
+        case "/nosotros.html":
+            document.querySelector('#link__nosotros').classList.add('activo')
+            document.querySelector('.fa-users').classList.add('activo')
+            document.querySelector('.nosotros').classList.add('activo')
+        break;
+        case "/proyectos.html":
+            document.querySelector('#link__proyectos').classList.add('activo')
+            document.querySelector('.folder').classList.add('activo')
+            document.querySelector('.proyecto').classList.add('activo')
+        break;
+        case "/mundovmc.html":
+            document.querySelector('#link__mundovmc').classList.add('activo')
+            document.querySelector('.earth').classList.add('activo')
+            document.querySelector('.vmc').classList.add('activo')
+        break;
+        case "/contacto.html":
+            document.querySelector('#link__contacto').classList.add('activo')
+            document.querySelector('.book').classList.add('activo')
+            document.querySelector('.contacto').classList.add('activo')
+        break;
+        case "/catalogos.html":
+            document.querySelector('#link__catalogos').classList.add('activo')
+            document.querySelector('.open__book').classList.add('activo')
+            document.querySelector('.catalogo').classList.add('activo')
+        break;
+        case "/riggin.html":
+            document.querySelector('.wrench').classList.add('activo')
+            document.querySelector('.servicio').classList.add('activo')
+            document.querySelector('#servicios__modal').classList.add('activo')
+        break;
+        case "/automatizacion.html":
+            document.querySelector('.wrench').classList.add('activo')
+            document.querySelector('.servicio').classList.add('activo')
+            document.querySelector('#servicios__modal').classList.add('activo')
+        break;
+    }
+}
+
+const removeActive = () => {
+    document.querySelector('#link__home').classList.remove('activo')
+    document.querySelector('.fa-house').classList.remove('activo')
+    document.querySelector('.inicio').classList.remove('activo')
+    document.querySelector('#link__nosotros').classList.remove('activo')
+    document.querySelector('.fa-users').classList.remove('activo')
+    document.querySelector('.nosotros').classList.remove('activo')
+    document.querySelector('#link__proyectos').classList.remove('activo')
+    document.querySelector('.folder').classList.remove('activo')
+    document.querySelector('.proyecto').classList.remove('activo')
+    document.querySelector('#link__mundovmc').classList.remove('activo')
+    document.querySelector('.earth').classList.remove('activo')
+    document.querySelector('.vmc').classList.remove('activo')
+    document.querySelector('#link__contacto').classList.remove('activo')
+    document.querySelector('.book').classList.remove('activo')
+    document.querySelector('.contacto').classList.remove('activo')
+    document.querySelector('#link__catalogos').classList.remove('activo')
+    document.querySelector('.open__book').classList.remove('activo')
+    document.querySelector('.catalogo').classList.remove('activo')
+}
+
+document.addEventListener('DOMContentLoaded', setActiveLink())
