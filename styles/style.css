@@ -420,7 +420,7 @@ img{
     border-radius: .5rem;
 }
 /* ===== Carrousel Inicio */
-.text__banner{
+/* .text__banner{
     font-weight: 500;
 }
 @media (min-width:768px) {
@@ -438,7 +438,7 @@ img{
     .text__banner{
         font-size: 4rem !important;
     }
-}
+} */
 /* ===== Seccion Home ===== */
 .body__container{
     padding: 2.5rem;
