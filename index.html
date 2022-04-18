@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMCorrea · Inicio</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="assets/icons/logo-vmc.ico" type="image/x-icon"/>
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="styles/normalize.css"/> 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="styles/animate.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="styles/aos.css"/>
+    <!-- Custom Styles CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar close animate__animated">
+        <div class="contenedor__sidebar">
+            <div class="detalles__logo">
+                <i class="fa-solid fa-circle-xmark" id="btn__cerrar"></i>
+            </div>
+
+            <div class="nombre__logo mt-4">
+                <a href="/" class="mt-2 d-flex justify-content-center align-items-center">
+                    <img src="assets/icons/logo-vmc-principal.png"  class="animate__animated animate__fadeInLeft logo__principal" alt="Logo VMCORREA">
+                </a>
+            </div>
+            <ul class="nav__list animate__animated animate__fadeInLeft" id="navegacion__sidebar">
+                <li>
+                    <a href="index.html" class="sidebar__active" id="link__home">
+                        <i class="fa-solid fa-house link__active"></i>
+                        <span class="links__name inicio link__active">Inicio</span>
+                    </a>
+                    <span class="tooltip">Inicio</span>
+                </li>
+                <li>
+                    <a href="nosotros.html" class="sidebar__active" id="link__nosotros">
+                        <i class="fa-solid fa-users link__active"></i>
+                        <span class="links__name nosotros link__active">Nosotros</span>
+                    </a>
+                    <span class="tooltip">Nosotros</span>
+                </li>
+                <!-- Items for services -->
+                <li class="responsibe__servicios">
+                    <a href="#" id="btn__servicios__dropdown">
+                        <div class="">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <span class="links__name">Servicios</span>
+                        </div>
+                        <i class="fa-solid fa-angle-right dropdown"></i>
+                    </a>
+                    <div class="sub__menu__responsive">
+                        <a href="riggin.html">Rigging</a>
+                        <a href="automatizacion.html">Automatización</a>
+                        <a href="industria.html">Industrial 4.0</a>
+                        <a href="maquinados.html">Maquinados</a>
+                        <a href="seguridad_industrial.html">Seguridad Industrial</a>
+                        <a href="mtto_general.html">Manteniminto General</a>
+                        <a href="mtto_industrial.html">Mantenimiento Industrial</a>
+                    </div>
+                </li>
+                <li class="desktop__servicio">
+                    <a href="" id="servicios__modal" class="sidebar__active">
+                        <i class="fa-solid fa-screwdriver-wrench wrench link__active"></i>
+                        <span class="links__name servicio link__active">Servicios</span>
+                    </a>
+                    <span class="tooltip">Servicios</span>
+                </li>
+                <!-- End Items for services -->
+                <li>
+                    <a href="proyectos.html" class="sidebar__active" id="link__proyectos">
+                        <i class="fa-solid fa-folder-open folder link__active"></i>
+                        <span class="links__name proyecto link__active">Proyectos</span>
+                    </a>
+                    <span class="tooltip">Proyectos</span>
+                </li>
+                <li>
+                    <a href="mundovmc.html" class="sidebar__active" id="link__mundovmc">
+                        <i class="fa-solid earth fa-earth-americas link__active"></i>
+                        <span class="links__name vmc link__active">Mundo VMC</span>
+                    </a>
+                    <span class="tooltip">Mundo VMC</span>
+                </li>
+                <li>
+                    <a href="contacto.html" class="sidebar__active" id="link__contacto">
+                        <i class="fa-solid book fa-address-book link__active"></i>
+                        <span class="links__name contacto link__active">Contacto</span>
+                    </a>
+                    <span class="tooltip">Contacto</span>
+                </li>
+                <li>
+                    <a href="catalogos.html" class="sidebar__active" id="link__catalogos">
+                        <i class="fa-solid open__book fa-book-open link__active"></i>
+                        <span class="links__name catalogo link__active">Catalogo</span>
+                    </a>
+                    <span class="tooltip">Catalogo</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+    <!-- Home section -->
+    <div class="seccion__body">
+
+
+        <!-- header -->
+        <header class="header__container">
+            <div class="barra">
+                <div id="btn__abrir">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="slider__hero">
+                <!-- Carrousel -->
+                <div class="container-fluid p-0">
+                    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="#">
+                                    <img class="w-100"  src="assets/banners/banner7.png" alt="Imagen VMCORREA">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="" style="max-width: 100%;">
+                                            <h3 class="text-white fs-2 text-break text__banner animate__animated animate__zoomIn">Expertos en Intalaciones Electromecánicas</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img class="w-100"  src="assets/banners/banner1.png" alt="Imagen VMCORREA">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="" style="max-width:100%;">
+                                            <h3 class="text-white fs-2 text-break text__banner animate__animated animate__zoomIn">Automatización y Programación PLC</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img class="w-100" src="assets/banners/banner2.png" alt="Imagen VMCORREA">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="" style="max-width: 100%;">
+                                            <h3 class="text-white fs-2 text-break text__banner animate__animated animate__zoomIn">Instalaciones Eléctricas Industriales</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img class="w-100" src="assets/banners/banner3.png" alt="Imagen VMCORREA">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="" style="max-width: 100%;">
+                                            <h3 class="text-white fs-2 text-break text__banner animate__animated animate__zoomIn">Diseño y Maquinado</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img class="w-100" src="assets/banners/banner4.png" alt="Imagen VMCORREA">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="" style="max-width: 100%;">
+                                            <h3 class="text-white fs-2 text-break text__banner animate__animated animate__zoomIn">Mantenimiento y Reparación de Dispositivos</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img class="w-100" src="assets/banners/banner5.png" alt="Imagen VMCORREA">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="" style="max-width: 100%;">
+                                            <h3 class="text-white fs-2 text-break text__banner animate__animated animate__zoomIn">Ajuste y Eficiencia de Lineas</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img class="w-100" src="assets/banners/banner6.png" alt="Imagen VMCORREA">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="" style="max-width: 100%;">
+                                            <h3 class="text-white fs-2 text-break text__banner animate__animated animate__zoomIn">Seguridad Industrial</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img class="w-100" src="assets/banners/banner8.png" alt="Imagen VMCORREA">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="" style="max-width: 100%;">
+                                            <h3 class="text-white fs-2 text-break text__banner animate__animated animate__zoomIn">Montaje Mecánico</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- End Carrousel -->
+            </div>
+        </header>
+        <!-- End header -->
+
+        <!-- Main section or body -->
+        <div class="body__container">
+            <main class="main">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12" data-aos="fade-up">
+                                <div class="section-title mb-4">
+                                    <h5 class="position-relative d-inline-block text-uppercase heading">
+                                        Sobre Nosotros
+                                        <span class="sub__line1"></span>
+                                        <span class="sub__line2"></span>
+                                    </h5>
+                                    <h1 class="display-1 mb-0 mt-4">
+                                        VMCorrea Expertos en Instalaciones Electromecánicas S. de R.L. de C.V.
+                                    </h1>
+                                    
+                                </div>
+                                <h4 class="text__body mb-4 text-justify">Empresa Líder en el sector electromecánico con más de 30 años de experiencia, brindando soluciones tecnológicas integrales de ingeniería y montaje.</h4>
+                                <p class="mb-4 text-justify">Empresa comprometida con sus clientes y colaboradores por lo que contamos con una política interna firme que garantice nuestro trabajo y la satisfacción del cliente.</p>
+                            </div>
+                            <div class="col-lg-5 flex__box" data-aos="zoom-in">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="text-center">
+                                            <img src="assets/icons/logo-vmc-principal.png" loading="lazy"  class="rounded" alt="Logo VMCORREA" width="50%">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="text-center">
+                                            <img src="assets/img/usa-mx.png" loading="lazy" class="rounded" alt="Bandera México - Estados Unidos " width="70%">
+                                        </div>                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- End body -->
+
+        <!-- Footer section -->
+        <footer class="sitio__footer bg-dark" data-aos="fade-up">
+            <div class="container pt-5 pb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <h5 class="text__footer">Contáctanos</h5>
+                        <ul class="iconos__redes">
+                            <li class="btn">
+                                <a class="btn__icon" href="#">
+                                    <i class="fab fa-twitter fw-normal"></i>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a class="btn__icon" href="#">
+                                    <i class="fab fa-facebook-f fw-normal"></i>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a class="btn__icon" href="#">
+                                    <i class="fab fa-linkedin-in fw-normal"></i>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a class="btn__icon" href="#">
+                                    <i class="fab fa-instagram fw-normal"></i>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a class="btn__icon" href="#">
+                                    <i class="fab fa-youtube fw-normal"></i>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a class="btn__icon" href="#">
+                                    <i class="fa fa-envelope fw-norma"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; VMCorrea 2022 | Todos los derechos reservados</p>
+                <div class="text-center pb-3">
+                    <a class="text-white" href="aviso_privacidad.html">Aviso de privacidad</a>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer section -->
+
+
+        <!-- Modal menu -->
+        <div id="myModal" class="menu__modal">
+            <div class="menu__modal__content">
+                <div class="menu__modal__header">
+                    <span class="close__modal">&times;</span>
+                    <h2 class="title__modal display-5">Servicios</h2>
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </div>
+                <div class="modal__body mt-0 m-2 row">
+                    <div class="col-3 d-flex justify-content-center align-items-center p-0">
+                        <div class="image__container d-flex justify-content-center align-items-center">
+                            <img id="ico__riggin" src="assets/icons/Riggin-tiny.png" width="60%" alt="Icono Riggin" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="ico__automatizacion" src="assets/icons/automatizacion-tiny.png" width="60%" alt="Icono Automatización" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="ico__industrial" src="assets/icons/industrial-tiny.png" width="60%" alt="Icono Industrial 4.0" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="ico__maquinados" src="assets/icons/maquinados-tiny.png" width="60%" alt="Icono Maquinados" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="ico__seguridad" src="assets/icons/seguridad-tiny.png" width="60%" alt="Icono Seguridad Industrial" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="ico__mgeneral" src="assets/icons/mantenimiento-tiny.png" width="60%" alt="Icono Mantenimiento General" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="ico__mindustrial" src="assets/icons/mantenimientoInd-tiny.png" width="60%" alt="Icono Mantenimiento Industrial" class="d-none animate__zoomIn animate__animated">
+                        </div>
+                    </div>
+                    <div class="col-4 p-0">
+                        <ul class="sub__menu">
+                            <li><a class="mega__link" href="riggin.html">Riggin</a></li>
+                            <li><a class="mega__link" href="automatizacion.html">Automatización</a></li>
+                            <li><a class="mega__link" href="industria.html">Industrial 4.0</a></li>
+                            <li><a class="mega__link" href="maquinados.html">Maquinados</a></li>
+                            <li><a class="mega__link" href="seguridad_industrial.html">Seguridad Industrial</a></li>
+                            <li><a class="mega__link" href="mtto_general.html">Manteniminto General</a></li>
+                            <li><a class="mega__link" href="mtto_industrial.html">Mantenimiento Industrial</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center align-items-center p-0">
+                        <div class="image__container d-flex justify-content-center align-items-center">
+                            <img id="img__riggin" src="assets/img/img-riggin.png" width="60%" alt="Imagen alusiva al servicio Riggin" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="img__automatizacion" src="assets/img/img-automatizacion.png" width="60%" alt="Imagen alusiva al servicio Automatización" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="img__industrial" src="assets/img/img-industria.png" width="70%" alt="Imagen alusiva al servicio Industrial 4.0" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="img__maquinados" src="assets/img/img-maquinados.png" width="25%" alt="Imagen alusiva al servicio Maquinados" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="img__seguridad" src="assets/img/img-seguridad.png" width="60%" alt="Imagen alusiva al servicio Seguridad Industrial" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="img__mgeneral" src="assets/img/brazos-roboticos-g1.jpg" width="60%" alt="Imagen alusiva al servicio Manteniminto General" class="d-none animate__zoomIn animate__animated">
+        
+                            <img id="img__mindustrial" src="assets/img/brazos-roboticos-g1.jpg" width="60%" alt="Imagen alusiva al Mantenimiento Industrial" class="d-none animate__zoomIn animate__animated">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal menu -->
+    </div>
+    <!-- End Home section -->
+
+
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>
