@@ -122,3 +122,13 @@ megaLink.forEach(link => link.onmouseout = ( e ) => {
         break;
     }
 })
+
+let mq = window.matchMedia('(min-width: 768px)')
+let img = document.querySelector('#img__logo') 
+
+const screenTest = ( e ) => {
+    if(e.matches){
+        ( sidebar.classList.contains('open') ) ? sidebar.classList.remove('open') : null
+    }
+}
+mq.addListener(screenTest)

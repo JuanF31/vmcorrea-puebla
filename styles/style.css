@@ -47,7 +47,7 @@ img{
 }
 /* ===== Sidebar Menu ==== */
 .sidebar{
-    display: flex;
+    display: block;
     align-items: center;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -70,6 +70,11 @@ img{
 }
 .logo__principal{
     width: 25%;
+}
+@media (min-width:767px) {
+    .logo__principal{
+        width: 25%;
+    }
 }
 @media (min-width:768px) {
     .logo__principal{
@@ -410,8 +415,8 @@ img{
     color: var(--blanco);
     font-weight: 500;
     font-size: 2rem;
-    background-color: #20375D;
-    padding: 0 1rem;
+    background-color: var(--azul__primario);
+    padding: .5rem 1rem;
     border-radius: .5rem;
 }
 /* ===== Carrousel Inicio */
