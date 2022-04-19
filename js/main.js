@@ -85,7 +85,7 @@ megaLink.forEach(link => link.onmouseover = ( e ) => {
             document.querySelector('#ico__automatizacion').classList.remove('d-none')
             document.querySelector('#img__automatizacion').classList.remove('d-none')
         break;
-        case "Industrial 4.0":
+        case "Industria 4.0":
             document.querySelector('#ico__industrial').classList.remove('d-none')
             document.querySelector('#img__industrial').classList.remove('d-none')
         break;
@@ -118,7 +118,7 @@ megaLink.forEach(link => link.onmouseout = ( e ) => {
             document.querySelector('#ico__automatizacion').classList.add('d-none')
             document.querySelector('#img__automatizacion').classList.add('d-none')
         break;
-        case "Industrial 4.0":
+        case "Industria 4.0":
             document.querySelector('#ico__industrial').classList.add('d-none')
             document.querySelector('#img__industrial').classList.add('d-none')
         break;
@@ -183,15 +183,13 @@ const setActiveLink = () => {
             document.querySelector('.open__book').classList.add('activo')
             document.querySelector('.catalogo').classList.add('activo')
         break;
-        case "/riggin.html":
-            document.querySelector('.wrench').classList.add('activo')
-            document.querySelector('.servicio').classList.add('activo')
-            document.querySelector('#servicios__modal').classList.add('activo')
-        break;
-        case "/automatizacion.html":
-            document.querySelector('.wrench').classList.add('activo')
-            document.querySelector('.servicio').classList.add('activo')
-            document.querySelector('#servicios__modal').classList.add('activo')
+        default:
+            if(urlActual === "/riggin.html" || urlActual === "/automatizacion.html" || urlActual === "/industria.html" ||
+                urlActual === "/maquinados.html" || urlActual === "/seguridad_industrial.html" || urlActual === "/mtto_general.html" || urlActual === "/mtto_industrial.html"){
+                document.querySelector('.wrench').classList.add('activo')
+                document.querySelector('.servicio').classList.add('activo')
+                document.querySelector('#servicios__modal').classList.add('activo')
+            }
         break;
     }
 }
