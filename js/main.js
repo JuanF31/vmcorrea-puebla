@@ -4,6 +4,9 @@ AOS.init({
 });
 //End Function AOS
 
+let body = document.getElementsByTagName('body')[0]
+
+
 //Open sidebarmenu responsive
 let btnOpen = document.querySelector('#btn__abrir')
 let sidebar = document.querySelector('.sidebar')
@@ -13,11 +16,13 @@ btnOpen.onclick = ( e ) => {
     e.preventDefault()
     sidebar.classList.add('open')
     sidebar.classList.add('animate__fadeInLeft');
+    body.classList.add('block-scroll')
 }
 btnClose.onclick = ( e ) => {
     e.preventDefault()
     sidebar.classList.remove('open')
-    sidebar.classList.remove('animate__fadeInLeft');
+    sidebar.classList.remove('animate__fadeInLeft')
+    body.classList.remove('block-scroll')
 }
 //End sidebar
 
@@ -36,6 +41,7 @@ let btnModal = document.querySelector( '#servicios__modal' )
 let modal = document.querySelector( '#myModal' )
 let span = document.getElementsByClassName("close__modal")[0]
 
+
 let wrench =  document.querySelector('.wrench')
 let servicio = document.querySelector('.servicio')
 
@@ -44,13 +50,14 @@ btnModal.onclick = ( e ) => {
     btnModal.classList.add('activo')
     wrench.classList.add('activo')
     servicio.classList.add('activo')
+    body.classList.add('block-scroll')
     removeActive()
     modal.style.display = 'flex'
 }
 span.onclick = ( e ) => {
     e.preventDefault()
     modal.style.display = 'none'
-
+    body.classList.remove('block-scroll')
     btnModal.classList.remove('activo');
     wrench.classList.remove('activo')
     servicio.classList.remove('activo')
@@ -59,7 +66,7 @@ span.onclick = ( e ) => {
 window.onclick = ( e ) => {
     if(e.target === modal){
         modal.style.display = 'none'
-
+        body.classList.remove('block-scroll')
         btnModal.classList.remove('activo');
         wrench.classList.remove('activo')
         servicio.classList.remove('activo')
@@ -216,3 +223,5 @@ const removeActive = () => {
 }
 
 document.addEventListener('DOMContentLoaded', setActiveLink())
+
+

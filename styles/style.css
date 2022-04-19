@@ -725,3 +725,4 @@ h1{
     padding: 1.5rem;
     font-size: 1.6rem;
 }
+.block-scroll {overflow:hidden;}
