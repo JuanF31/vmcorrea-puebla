@@ -420,6 +420,20 @@ img{
     border-radius: .5rem;
 }
 /* ===== Carrousel Inicio */
+.carousel-item{
+    transition: .1 ease-in-out left !important;
+}
+@media (min-width:768px) {
+    .arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--azul__primario);
+        padding: 2rem ;
+        border-radius: 4rem;
+    }  
+}
+
 /* .text__banner{
     font-weight: 500;
 }
