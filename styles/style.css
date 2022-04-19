@@ -509,7 +509,7 @@ h1{
         rgba(32, 55, 93, .60)
     ), url(../assets/banners/riggin-banner.png) center center no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -521,7 +521,7 @@ h1{
     rgba(32, 55, 93, .60)
     ), url(../assets/banners/automatizacion-banner.png) center center no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,7 +533,7 @@ h1{
     rgba(32, 55, 93, .60)
     ), url(../assets/banners/industrial-banner.jpg) center center no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -545,7 +545,7 @@ h1{
     rgba(32, 55, 93, .60)
     ), url(../assets/banners/maquinados-banner.png) center center no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -557,7 +557,7 @@ h1{
     rgba(32, 55, 93, .60)
     ), url(../assets/banners/seguridad-baner.jpg) center center no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,7 +569,7 @@ h1{
     rgba(32, 55, 93, .60)
     ), url() center center no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -581,7 +581,7 @@ h1{
     rgba(32, 55, 93, .60)
     ), url() center center no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
