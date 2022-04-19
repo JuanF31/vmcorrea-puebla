@@ -607,6 +607,74 @@ h1{
 .flex__end span{
     font-weight: bold;
 }
+/* ===== Contacto ===== */
+.title-mapa{
+    color: var(--azul__primario);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.mapa-contacto{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.mapa-circular{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+}
+.icono-contacto ul{
+    list-style: none;
+    font-size: 1.6rem;
+}
+.icono-contacto ul li p i{
+    color: var(--azul__primario);
+    font-size: 2rem;
+}
+.title{
+    color: var(--azul__primario);
+    font-size: calc(1.325rem + .9vw);
+}
+.lista-contactanos{
+    list-style: none;
+    padding: 0;
+}
+.lista-contactanos li {
+    padding: 1rem;
+}
+.lista-contactanos li a i{
+    color: var(--azul__primario);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.lista-contactanos li a{
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: background-color .5s ease-in-out;
+}
+.lista-contactanos li a::after{
+    display: block;
+    content: "";
+    padding-top: .2rem;
+    border-bottom: solid .3rem #20375d;
+    transform: scaleX(0);  
+    transition: transform .6s ease-in-out;
+    transform-origin: 100% 50%; 
+}
+.lista-contactanos li a:hover:after{
+    transform: scaleX(1); 
+    transform-origin: 0% 50%;
+}
+/* ===== Seccion Catalogos ==== */
+.nav-pills .nav-link.active{
+    background-color: var(--azul__primario) !important;
+    color: var(--blanco) !important;
+}
+.nav-link{
+    color: var(--azul__primario) !important;
+}
 /* ===== Footer ===== */
 .text__footer{
     margin-top: 2rem;
