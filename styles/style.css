@@ -19,7 +19,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
-    /* line-height: 2; */
+    line-height: 2;
 }
 /* ===== Globales ===== */
 img{
@@ -416,7 +416,7 @@ img{
     font-weight: 500;
     font-size: 2rem;
     background-color: var(--azul__primario);
-    padding: .5rem 1rem;
+    padding: 0 1rem;
     border-radius: .5rem;
 }
 /* ===== Carrousel Inicio */
