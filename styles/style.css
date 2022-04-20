@@ -504,88 +504,46 @@ h1{
 /*======   Servicios  ======*/
 /* ==== Riggin ==== */
 .bg-appointment-riggin {
-    background: linear-gradient(
-        rgba(32, 55, 93, .60), 
-        rgba(32, 55, 93, .60)
-    ), url(../assets/banners/riggin-banner.png) center center no-repeat;
+    background: url(../assets/banners/Banner_Servicio_Riggin.png) center center no-repeat;
     background-size: cover;
-    height: 33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
 }
 /* ==== Automatización ==== */
 .bg-appointment-automatizacion{
-    background: linear-gradient(
-    rgba(32, 55, 93, .60), 
-    rgba(32, 55, 93, .60)
-    ), url(../assets/banners/automatizacion-banner.png) center center no-repeat;
+    background: url(../assets/banners/Banner_Servicio_Automatizacion.png) center center no-repeat;
     background-size: cover;
-    height: 33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
 }
 /* ==== Industria ==== */
 .bg-appointment-industrial{
-    background: linear-gradient(
-    rgba(32, 55, 93, .60), 
-    rgba(32, 55, 93, .60)
-    ), url(../assets/banners/industrial-banner.jpg) center center no-repeat;
+    background: url(../assets/banners/Banner_Servicio_Industria4.png) center center no-repeat;
     background-size: cover;
-    height: 33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
 }
 /* ==== Maquinados ==== */
 .bg-appointment-maquinados{
-    background: linear-gradient(
-    rgba(32, 55, 93, .60), 
-    rgba(32, 55, 93, .60)
-    ), url(../assets/banners/maquinados-banner.png) center center no-repeat;
+    background: url(../assets/banners/Banner_Servicio_Maquinados.png) center center no-repeat;
     background-size: cover;
-    height: 33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
 }
 /* ==== Seguridad Industrial ==== */
 .bg-appointment-seguridadIn{
-    background: linear-gradient(
-    rgba(32, 55, 93, .60), 
-    rgba(32, 55, 93, .60)
-    ), url(../assets/banners/seguridad-baner.jpg) center center no-repeat;
+    background: url(../assets/banners/Banner_Servicio_SeguridadIn.png) center center no-repeat;
     background-size: cover;
-    height: 33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
 }
 /* ==== Mantenimiento Industrial ==== */
 .bg-appointment-mttoIndustrial{
-    background: linear-gradient(
-    rgba(32, 55, 93, .60), 
-    rgba(32, 55, 93, .60)
-    ), url() center center no-repeat;
+    background: url(../assets/banners/Banner_Servicio_MttoIn.png) center center no-repeat;
     background-size: cover;
-    height: 33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
 }
 /* ==== Mantenimiento General ==== */
-.bg-appointment-mttoGeneral{
-    background: linear-gradient(
-    rgba(32, 55, 93, .60), 
-    rgba(32, 55, 93, .60)
-    ), url() center center no-repeat;
+/* .bg-appointment-mttoGeneral{
+    background: url(../assets/banners/Banner_Servicio_MttoGral.png) center center no-repeat;
     background-size: cover;
-    height: 33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    height: 50vh;
+} */
 /*=== Aviso de privacidad ====*/
 .accordion-custom{
     margin: 1rem !important;      
