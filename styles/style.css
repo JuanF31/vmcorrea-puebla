@@ -503,11 +503,7 @@ h1{
 }
 /*======   Servicios  ======*/
 /* ==== Riggin ==== */
-.bg-appointment-riggin {
-    background: url(../assets/banners/Banner_Servicio_Riggin.png) center center no-repeat;
-    background-size: cover;
-    height: 50vh;
-}
+
 /* ==== Automatización ==== */
 .bg-appointment-automatizacion{
     background: url(../assets/banners/Banner_Servicio_Automatizacion2.png) center center no-repeat;
@@ -527,11 +523,7 @@ h1{
     height: 50vh;
 }
 /* ==== Seguridad Industrial ==== */
-.bg-appointment-seguridadIn{
-    background: url(../assets/banners/Banner_Servicio_SeguridadIn.png) center center no-repeat;
-    background-size: cover;
-    height: 50vh;
-}
+
 /* ==== Mantenimiento Industrial ==== */
 .bg-appointment-mttoIndustrial{
     background: url(../assets/banners/Banner_Servicio_MttoIn.png) center center no-repeat;
