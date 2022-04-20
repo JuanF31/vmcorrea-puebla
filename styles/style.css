@@ -57,6 +57,14 @@ img{
 .p{
     text-align: justify;
 }
+.mb__mobile{
+    margin-top: 4rem;
+}
+@media (min-width:768px) {
+    .mb__mobile{
+        margin-top: 0;
+    }
+}
 /* ===== Sidebar Menu ==== */
 .sidebar{
     display: block;
