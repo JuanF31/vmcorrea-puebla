@@ -45,6 +45,18 @@ img{
         font-size: 8rem;
     }
 }
+.p__text{
+    font-weight: 600;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+.bold{
+    font-weight: 700;
+}
+.p{
+    text-align: justify;
+}
 /* ===== Sidebar Menu ==== */
 .sidebar{
     display: block;
@@ -455,11 +467,11 @@ img{
 } */
 /* ===== Seccion Home ===== */
 .body__container{
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 0 2.5rem;
 }
 @media (min-width:768px) {
     .body__container{
-        padding: 5rem;
+        padding: 5rem 5rem 0 5rem;
     }
 }
 .text__subheading{
@@ -468,7 +480,7 @@ img{
     font-weight: 500 !important;
 }
 .sub__line1::after{
-    margin-top: .9rem;
+    margin-top: .5rem;
     content: '';
     display: block;
     width: 40%;
@@ -476,7 +488,7 @@ img{
     background-color: var(--azul__secudario);
 }
 .sub__line2::after{
-    margin-top: .9rem;
+    margin-top: .5rem;
     content: '';
     display: block;
     width: 20%;
@@ -498,24 +510,9 @@ h1{
 }
 /* ===== Seccion Nosotros ===== */
 .heading{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: var(--azul__primario);
 }
-/*======   Servicios  ======*/
-/* ==== Riggin ==== */
-
-/* ==== Automatización ==== */
-
-/* ==== Industria ==== */
-
-/* ==== Maquinados ==== */
-
-/* ==== Seguridad Industrial ==== */
-
-/* ==== Mantenimiento Industrial ==== */
-
-/* ==== Mantenimiento General ==== */
-
 /*=== Aviso de privacidad ====*/
 .accordion-custom{
     margin: 1rem !important;      
