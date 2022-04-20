@@ -505,37 +505,17 @@ h1{
 /* ==== Riggin ==== */
 
 /* ==== Automatización ==== */
-.bg-appointment-automatizacion{
-    background: url(../assets/banners/Banner_Servicio_Automatizacion2.png) center center no-repeat;
-    background-size: cover;
-    height: 50vh;
-}
+
 /* ==== Industria ==== */
-.bg-appointment-industrial{
-    background: url(../assets/banners/Banner_Servicio_Industria4.png) center center no-repeat;
-    background-size: cover;
-    height: 50vh;
-}
+
 /* ==== Maquinados ==== */
-.bg-appointment-maquinados{
-    background: url(../assets/banners/Banner_Servicio_Maquinados.png) center center no-repeat;
-    background-size: cover;
-    height: 50vh;
-}
+
 /* ==== Seguridad Industrial ==== */
 
 /* ==== Mantenimiento Industrial ==== */
-.bg-appointment-mttoIndustrial{
-    background: url(../assets/banners/Banner_Servicio_MttoIn.png) center center no-repeat;
-    background-size: cover;
-    height: 50vh;
-}
+
 /* ==== Mantenimiento General ==== */
-/* .bg-appointment-mttoGeneral{
-    background: url(../assets/banners/Banner_Servicio_MttoGral.png) center center no-repeat;
-    background-size: cover;
-    height: 50vh;
-} */
+
 /*=== Aviso de privacidad ====*/
 .accordion-custom{
     margin: 1rem !important;      
