@@ -99,18 +99,7 @@ img{
 .sidebar.close{
     display: none;
 }
-.logo__principal{
-    width: 25%;
-}
-@media (min-width:767px) {
-    .logo__principal{
-        width: 25%;
-    }
-}
 @media (min-width:768px) {
-    .logo__principal{
-        width: 100%;
-    }
     .sidebar{
         overflow: unset;
     }
