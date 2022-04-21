@@ -26,6 +26,14 @@ img{
     max-width: 100%;
 }
 /* ==== Utilidades ==== */
+.catalogo__container{
+    padding: 1rem 5rem 1rem 5rem;
+}
+@media (min-width:768px) {
+    .catalogo__container{
+        padding: 0 5rem 5rem 5rem;
+    }
+}
 .flex__box{
     display: flex;
     justify-content: center;
@@ -48,7 +56,7 @@ img{
 .p__text{
     font-weight: 600;
     text-align: justify;
-    font-size: 1.8rem;
+    /* font-size: 1.6rem; */
     font-style: italic;
 }
 .bold{
@@ -454,25 +462,6 @@ img{
     }  
 }
 
-/* .text__banner{
-    font-weight: 500;
-}
-@media (min-width:768px) {
-    .text__banner{
-        font-weight: 700;
-        font-size: 5rem !important;
-    }
-}
-@media (min-width:318px) {
-    .text__banner{
-        font-size: 2.5rem !important;
-    }
-}
-@media (min-width:600px){
-    .text__banner{
-        font-size: 4rem !important;
-    }
-} */
 /* ===== Seccion Home ===== */
 .body__container{
     padding: 2.5rem 2.5rem 0 2.5rem;
