@@ -151,7 +151,6 @@ megaLink.forEach(link => link.onmouseout = ( e ) => {
 let mq = window.matchMedia('(min-width: 768px)')
 const screenTest = ( e ) => {
     if(e.matches){
-        
         ( sidebar.classList.contains('open') ) ? sidebar.classList.remove('open') : null
     }
 }
