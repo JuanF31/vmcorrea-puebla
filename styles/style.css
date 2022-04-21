@@ -26,6 +26,9 @@ img{
     max-width: 100%;
 }
 /* ==== Utilidades ==== */
+.pd__b10{
+    padding-bottom: 10rem;
+}
 .catalogo__container{
     padding: 1rem 5rem 1rem 5rem;
 }
