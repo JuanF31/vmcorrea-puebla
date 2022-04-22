@@ -2,7 +2,7 @@
 AOS.init({
     duration: 1000
 });
-//End Function AOS
+// End Function AOS
 
 let body = document.getElementsByTagName('body')[0]
 
@@ -156,10 +156,11 @@ let mq = window.matchMedia('(min-width: 768px)')
 
 const screenTest = ( e ) => {
     if(e.matches){
-        ( sidebar.classList.contains('open') ) ? sidebar.classList.remove('open') : null
-        if(sidebar.classList.contains('open') === false){
-            imgVmc.style.width = '100%'
+        if( sidebar.classList.contains('open') ){
+            sidebar.classList.remove('open')
+            body.classList.remove('block-scroll')
         }
+        ( sidebar.classList.contains('open') === false ) ? imgVmc.style.width = '100%' : null
     }  
 }
 mq.addListener(screenTest)
