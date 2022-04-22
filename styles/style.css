@@ -90,7 +90,7 @@ img{
     background-color: var(--azul__primario);
     padding: .6rem 1.4rem;
     z-index: 3;
-    transition: all 1s ease-in-out;
+    /* transition: all 1s ease-in-out; */
 }
 .contenedor__sidebar{
     width: 100%;

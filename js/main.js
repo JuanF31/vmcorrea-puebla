@@ -11,18 +11,22 @@ let body = document.getElementsByTagName('body')[0]
 let btnOpen = document.querySelector('#btn__abrir')
 let sidebar = document.querySelector('.sidebar')
 let btnClose = document.querySelector('#btn__cerrar')
+let imgVmc = document.querySelector('#img__logo')
+
 
 btnOpen.onclick = ( e ) => {
     e.preventDefault()
     sidebar.classList.add('open')
     sidebar.classList.add('animate__fadeInLeft');
     body.classList.add('block-scroll')
+    imgVmc.style.width = '25%'
 }
 btnClose.onclick = ( e ) => {
     e.preventDefault()
     sidebar.classList.remove('open')
     sidebar.classList.remove('animate__fadeInLeft')
     body.classList.remove('block-scroll')
+    imgVmc.style.width = '100%'
 }
 //End sidebar
 
@@ -149,12 +153,17 @@ megaLink.forEach(link => link.onmouseout = ( e ) => {
 })
 
 let mq = window.matchMedia('(min-width: 768px)')
+
 const screenTest = ( e ) => {
     if(e.matches){
         ( sidebar.classList.contains('open') ) ? sidebar.classList.remove('open') : null
-    }
+        if(sidebar.classList.contains('open') === false){
+            imgVmc.style.width = '100%'
+        }
+    }  
 }
 mq.addListener(screenTest)
+
 
 
 const setActiveLink = () => {
