@@ -108,7 +108,7 @@ megaLink.forEach(link => link.onmouseover = ( e ) => {
             document.querySelector('#ico__seguridad').classList.remove('d-none')
             document.querySelector('#img__seguridad').classList.remove('d-none')
         break;
-        case "Manteniminto General":
+        case "Mantenimiento General":
             document.querySelector('#ico__mgeneral').classList.remove('d-none')
             document.querySelector('#img__mgeneral').classList.remove('d-none')
         break;
@@ -141,7 +141,7 @@ megaLink.forEach(link => link.onmouseout = ( e ) => {
             document.querySelector('#ico__seguridad').classList.add('d-none')
             document.querySelector('#img__seguridad').classList.add('d-none')
         break;
-        case "Manteniminto General":
+        case "Mantenimiento General":
             document.querySelector('#ico__mgeneral').classList.add('d-none')
             document.querySelector('#img__mgeneral').classList.add('d-none')
         break;
