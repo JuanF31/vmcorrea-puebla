@@ -591,6 +591,15 @@ h1{
 .nav-link{
     color: var(--azul__primario) !important;
 }
+/* ===== Mundo VMC ===== */
+input[type="email"], input[type="password"] {
+    font-size: 1.6rem;
+}
+.btn__custom{
+    background-color: var(--azul__primario) !important;
+    color: var(--blanco);
+    font-size: 1.6rem;
+}
 /* ===== Footer ===== */
 .text__footer{
     margin-top: 2rem;
