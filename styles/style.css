@@ -527,37 +527,29 @@ h1{
 .title-mapa{
     color: var(--azul__primario);
     text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.1rem;
+    font-weight: 600;
 }
 .mapa-contacto{
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
 }
 .mapa-circular{
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
 }
-.icono-contacto ul{
-    list-style: none;
-    font-size: 1.6rem;
-}
-.icono-contacto ul li p i{
+.icono-contacto p i{
     color: var(--azul__primario);
     font-size: 2rem;
-}
-.title{
-    color: var(--azul__primario);
-    font-size: calc(1.325rem + .9vw);
 }
 .lista-contactanos{
     list-style: none;
     padding: 0;
 }
 .lista-contactanos li {
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
 }
 .lista-contactanos li a i{
     color: var(--azul__primario);
@@ -567,7 +559,6 @@ h1{
 .lista-contactanos li a{
     color: var(--negro);
     text-decoration: none;
-    font-size: 1.6rem;
     transition: background-color .5s ease-in-out;
 }
 .lista-contactanos li a::after{
