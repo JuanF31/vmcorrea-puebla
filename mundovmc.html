@@ -100,9 +100,9 @@
                     <li>
                         <a href="catalogos.html" class="sidebar__active" id="link__catalogos">
                             <i class="fa-solid open__book fa-book-open link__active"></i>
-                            <span class="links__name catalogo link__active">Catalogo</span>
+                            <span class="links__name catalogo link__active">Catálogos</span>
                         </a>
-                        <span class="tooltip">Catalogo</span>
+                        <span class="tooltip">Catálogos</span>
                     </li>
                 </ul>
             </nav>
@@ -127,8 +127,8 @@
         <!-- End header -->
 
         <!-- Main section or body -->
-        <div class="contenedor mb-5">
-            <div class="body__container">
+        <div class="contenedor mb-5 mt-5">
+            <div class="form__container">
                 <main class="main" data-aos="fade-up">
                     <div class="container-fluid">
                         <div class="container">
@@ -137,18 +137,58 @@
                                 <span class="sub__line1"></span>
                                 <span class="sub__line2"></span>
                             </h5>
-                            <form class="mt-3">
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Correo o Usuario</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su correo o nombre de usuario">
+                            <div class="form mt-4 shadow-lg">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-12 p-5 flex__box">
+                                        <img src="/assets/icons/logo-vmc-principal.png" alt="">
+                                    </div>
+                                    <div class="col-lg-5 col-md-12 p-5 flex__box">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h4 class="text-uppercase display-5">Inicio de sesión VMCORREA</h4>
+                                                <p>¿Aun no tienes cuenta? Crea una <a href="#">aqui</a></p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <form class="col-12 needs-validation" action="#" novalidate>
+                                                        <div class="col-12 mb-3">
+                                                            <label for="nombre_usuario" class="form-label">Nombre de usuario</label>
+                                                            <input type="text" name="nombre_usuario" class="form-control" id="nombre_usuario" placeholder="Ingrese su nombre de usuario" required>
+                                                            <div class="valid-feedback">
+                                                                Nombre de usuario correcto!
+                                                            </div>
+                                                            <div class="invalid-feedback">
+                                                                Por favor ingrese su nombre de usuario.
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <label for="password_usuario" class="form-label">Contraseña</label>
+        
+                                                            <div class="input-group">
+                                                                <input type="password" id="password_usuario" name="password_usuario" class="form-control" placeholder="Ingrese su contraseña" required>
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn btn-outline-dark" id="btnPassword" type="button"><i id="iconPassword" class="fa-solid fa-eye"></i></button>
+                                                                </span>
+                                                                <div class="valid-feedback">
+                                                                    Contraseña correcta!
+                                                                </div>
+                                                                <div class="invalid-feedback">
+                                                                    Por favor ingrese su contraseña.
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-12 pt-4">
+                                                            <button class="button btn__3" type="submit">Iniciar Sesión</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+ 
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="ingrese su contraseña">
-                                </div>
-
-                                <button type="submit" class="btn btn__custom">Acceder</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </main>
