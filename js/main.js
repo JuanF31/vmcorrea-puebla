@@ -234,4 +234,37 @@ const removeActive = () => {
 
 document.addEventListener('DOMContentLoaded', setActiveLink())
 
+let btnPassword = document.querySelector('#btnPassword')
+let cambio = document.querySelector('#password_usuario')
+let iconPassword = document.querySelector('#iconPassword')
+
+btnPassword.onclick = ( e ) => {
+    e.preventDefault()
+    if(cambio.type == 'password'){
+        cambio.type = 'text'
+        iconPassword.classList.remove('fa-eye')
+        iconPassword.classList.add('fa-eye-slash')
+    }else{
+        cambio.type = 'password'
+        iconPassword.classList.remove('fa-eye-slash')
+        iconPassword.classList.add('fa-eye')
+    }
+}
+
+
+(function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
+
 
