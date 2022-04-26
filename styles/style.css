@@ -540,9 +540,6 @@ h1{
     display: flex;
     justify-content: center;
     padding: 2rem 0 2rem 0;
-    background-image: url(../assets/img/fondo-circulo.png);
-    background-position: center;
-    background-size: 100%;
 }
 .mapa-circular{
     width: 25rem;
