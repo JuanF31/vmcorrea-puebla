@@ -539,7 +539,7 @@ h1{
 .mapa-contacto{
     display: flex;
     justify-content: center;
-    padding: 2rem 0 2rem 0;
+    padding: 5.5rem ;
     background-image: url(../assets/img/fondo-circulo.png);
     background-position: center;
     background-size: 100%;
