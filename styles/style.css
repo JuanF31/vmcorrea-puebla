@@ -26,6 +26,9 @@ img{
     max-width: 100%;
 }
 /* ==== Utilidades ==== */
+.mr-8{
+    margin: 8rem;
+}
 .square{
     width: 30rem;
     height: 35rem;
@@ -540,8 +543,6 @@ h1{
     display: flex;
     justify-content: center;
     padding: 2rem 0 2rem 0;
-    background-image: url(../assets/img/barra.png);
-    background-position: left;
 }
 .mapa-circular{
     width: 25rem;
@@ -591,17 +592,9 @@ h1{
     color: var(--azul__primario) !important;
 }
 /* ===== Mundo VMC ===== */
-.form__container{
-    padding: 2.5rem;
-}
+
 input[type="text"], input[type="password"] {
     font-size: 1.6rem;
-}
-.form{
-    border-radius: 1.5rem;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    padding: 2rem;
 }
 .btn-outline-dark{
     font-size: 1.6rem;
@@ -610,7 +603,8 @@ input[type="text"], input[type="password"] {
 }
 .btn-outline-dark:hover {
     color: #fff !important;
-    background-color: var(--azul__primario) !important;;
+    animation: shadow-pulse 1000ms 1;
+    background-color: var(--azul__primario) !important;
 }
 .button{
     position: relative;

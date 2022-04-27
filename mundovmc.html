@@ -127,73 +127,51 @@
         <!-- End header -->
 
         <!-- Main section or body -->
-        <div class="contenedor mb-5 mt-5">
-            <div class="form__container">
-                <main class="main" data-aos="fade-up">
-                    <div class="container-fluid">
-                        <div class="container">
-                            <h5 class="position-relative d-inline-block text-uppercase heading">
-                                Mundo VMC
-                                <span class="sub__line1"></span>
-                                <span class="sub__line2"></span>
-                            </h5>
-                            <div class="form mt-4 shadow-lg">
-                                <div class="row">
-                                    <div class="col-lg-7 col-md-12 p-5 flex__box">
-                                        <img src="/assets/icons/logo-vmc-principal.png" alt="">
+        <div class="mt-5 mb-5 container" data-aos="fade-up">
+            <div class="row pt-5 pb-5">
+                <div class="col-lg-7 col-md-12 flex__box">
+                    <img src="/assets/img/mundo_frase.png" alt="Imagen Login">
+                </div>
+                <div class="col-lg-5 col-md-12 flex__box">
+                    <div class="row m-4">
+                        <h4 class="text-uppercase display-5">Inicio de sesión</h4>
+                        <p>¿Aun no tienes cuenta? Crea una <a href="#">aqui</a></p>
+
+                        <form class="col-12 needs-validation" action="#" novalidate>
+                            <div class="col-12 mb-3">
+                                <label for="nombre_usuario" class="form-label">Nombre de usuario</label>
+                                <input type="text" name="nombre_usuario" class="form-control" id="nombre_usuario" placeholder="Ingrese su nombre de usuario" required>
+                                <div class="valid-feedback">
+                                    Nombre de usuario correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese su nombre de usuario.
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="password_usuario" class="form-label">Contraseña</label>
+
+                                <div class="input-group">
+                                    <input type="password" id="password_usuario" name="password_usuario" class="form-control" placeholder="Ingrese su contraseña" required>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-outline-dark" id="btnPassword" type="button"><i id="iconPassword" class="fa-solid fa-eye"></i></button>
+                                    </span>
+                                    <div class="valid-feedback">
+                                        Contraseña correcta!
                                     </div>
-                                    <div class="col-lg-5 col-md-12 p-5 flex__box">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h4 class="text-uppercase display-5">Inicio de sesión VMCORREA</h4>
-                                                <p>¿Aun no tienes cuenta? Crea una <a href="#">aqui</a></p>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row">
-                                                    <form class="col-12 needs-validation" action="#" novalidate>
-                                                        <div class="col-12 mb-3">
-                                                            <label for="nombre_usuario" class="form-label">Nombre de usuario</label>
-                                                            <input type="text" name="nombre_usuario" class="form-control" id="nombre_usuario" placeholder="Ingrese su nombre de usuario" required>
-                                                            <div class="valid-feedback">
-                                                                Nombre de usuario correcto!
-                                                            </div>
-                                                            <div class="invalid-feedback">
-                                                                Por favor ingrese su nombre de usuario.
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mb-3">
-                                                            <label for="password_usuario" class="form-label">Contraseña</label>
-        
-                                                            <div class="input-group">
-                                                                <input type="password" id="password_usuario" name="password_usuario" class="form-control" placeholder="Ingrese su contraseña" required>
-                                                                <span class="input-group-btn">
-                                                                    <button class="btn btn-outline-dark" id="btnPassword" type="button"><i id="iconPassword" class="fa-solid fa-eye"></i></button>
-                                                                </span>
-                                                                <div class="valid-feedback">
-                                                                    Contraseña correcta!
-                                                                </div>
-                                                                <div class="invalid-feedback">
-                                                                    Por favor ingrese su contraseña.
-                                                                </div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        <div class="col-12 pt-4">
-                                                            <button class="button btn__3" type="submit">Iniciar Sesión</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
- 
-                                        </div>
+                                    <div class="invalid-feedback">
+                                        Por favor ingrese su contraseña.
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-12 pt-4">
+                                <button class="button btn__3" type="submit">Iniciar Sesión</button>
+                            </div>
+                        </form>
                     </div>
-                </main>
+                </div>
             </div>
-        </div>
+        </div>    
         <!-- End body -->
 
         <!-- Footer section -->
@@ -259,6 +237,8 @@
                 <div class="modal__body mt-0 m-2 row">
                     <div class="col-3 d-flex justify-content-center align-items-center p-0">
                         <div class="image__container d-flex justify-content-center align-items-center">
+                            <img id="img__default" src="assets/icons/mantenimientoInd-tiny.png" width="60%" alt="Icono Servicios" class="animate__zoomIn animate__animated">
+
                             <img id="ico__riggin" src="assets/icons/Riggin-tiny.png" width="60%" alt="Icono Riggin" class="d-none animate__zoomIn animate__animated">
         
                             <img id="ico__automatizacion" src="assets/icons/automatizacion-tiny.png" width="60%" alt="Icono Automatización" class="d-none animate__zoomIn animate__animated">
@@ -287,6 +267,8 @@
                     </div>
                     <div class="col-5 d-flex justify-content-center align-items-center p-0">
                         <div class="image__container d-flex justify-content-center align-items-center">
+                            <img id="ico__default" src="assets/img/img-servicios.png" width="40%" alt="Imagen Servicios" class="animate__zoomIn animate__animated">
+
                             <img id="img__riggin" src="assets/img/img-riggin.png" width="60%" alt="Imagen alusiva al servicio Riggin" class="d-none animate__zoomIn animate__animated">
         
                             <img id="img__automatizacion" src="assets/img/img-automatizacion.png" width="60%" alt="Imagen alusiva al servicio Automatización" class="d-none animate__zoomIn animate__animated">
@@ -297,7 +279,7 @@
         
                             <img id="img__seguridad" src="assets/img/img-seguridad.png" width="60%" alt="Imagen alusiva al servicio Seguridad Industrial" class="d-none animate__zoomIn animate__animated">
         
-                            <img id="img__mgeneral" src="assets/img/img-mtto-gral.png" width="60%" alt="Imagen alusiva al servicio Mantenimiento General" class="d-none animate__zoomIn animate__animated">
+                            <img id="img__mgeneral" src="assets/img/img-mtto-gral.png" width="40%" alt="Imagen alusiva al servicio Mantenimiento General" class="d-none animate__zoomIn animate__animated">
         
                             <img id="img__mindustrial" src="assets/img/img-mtto-ind.png" width="60%" alt="Imagen alusiva al Mantenimiento Industrial" class="d-none animate__zoomIn animate__animated">
                         </div>

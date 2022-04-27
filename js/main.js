@@ -117,6 +117,8 @@ megaLink.forEach(link => link.onmouseover = ( e ) => {
             document.querySelector('#img__mindustrial').classList.remove('d-none')
         break;
     }
+    document.querySelector('#img__default').classList.add('d-none')
+    document.querySelector('#ico__default').classList.add('d-none')
 })
 
 megaLink.forEach(link => link.onmouseout = ( e ) => {
@@ -150,6 +152,8 @@ megaLink.forEach(link => link.onmouseout = ( e ) => {
             document.querySelector('#img__mindustrial').classList.add('d-none')
         break;
     }
+    document.querySelector('#img__default').classList.remove('d-none')
+    document.querySelector('#ico__default').classList.remove('d-none')
 })
 
 let mq = window.matchMedia('(min-width: 768px)')
