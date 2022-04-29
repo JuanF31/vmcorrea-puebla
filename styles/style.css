@@ -533,6 +533,11 @@ h1{
     font-weight: bold;
 }
 /* ===== Contacto ===== */
+.bg-textura{
+    background-image: url(/assets/img/textura.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
 .title-mapa{
     color: var(--azul__primario);
     text-align: center;
