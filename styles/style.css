@@ -655,6 +655,10 @@ input[type="text"], input[type="password"] {
 .cointainer__dashboard{
     padding: 5rem 1rem 5rem 0;
 }
+.bg__panel{
+    background-color: var(--azul__primario);
+    color: var(--azul__primario);
+}
 /* ===== Footer ===== */
 .text__footer{
     margin-top: 2rem;
