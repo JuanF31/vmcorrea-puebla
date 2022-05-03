@@ -651,6 +651,10 @@ input[type="text"], input[type="password"] {
         box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
     }
 }
+/* ===== Dashboard ===== */
+.dashboard{
+    padding: 5rem 0 5rem 5rem;
+}
 /* ===== Footer ===== */
 .text__footer{
     margin-top: 2rem;
