@@ -238,6 +238,12 @@ const removeActive = () => {
 
 document.addEventListener('DOMContentLoaded', setActiveLink())
 
+let btnOption = document.querySelectorAll('.btn__option')
+btnOption.forEach(btnO => btnO.onclick = ( e ) => {
+    e.target.classList.add('active')
+})
+
+
 let btnPassword = document.querySelector('#btnPassword')
 let cambio = document.querySelector('#password_usuario')
 let iconPassword = document.querySelector('#iconPassword')
@@ -254,6 +260,9 @@ btnPassword.onclick = ( e ) => {
         iconPassword.classList.add('fa-eye')
     }
 }
+
+
+
 
 
 (function () {
