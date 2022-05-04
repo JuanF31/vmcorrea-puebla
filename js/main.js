@@ -240,7 +240,14 @@ document.addEventListener('DOMContentLoaded', setActiveLink())
 
 let btnOption = document.querySelectorAll('.btn__option')
 btnOption.forEach(btnO => btnO.onclick = ( e ) => {
+    e.preventDefault()
     e.target.classList.add('active')
+})
+
+let btnCloseModal = document.querySelectorAll('.btn-close')
+btnCloseModal.forEach(btnC => btnC.onclick = ( e ) => {
+    e.preventDefault()
+    btnOption.forEach(btnOp => btnOp.classList.remove('active'))
 })
 
 
