@@ -4,6 +4,7 @@
 :root{
     --azul__primario: #1F365E;
     --azul__secudario: #006D83;
+    --azul__terciario: #EEF3FF;
     --blanco: #FFF;
     --gris: #888;
     --negro: #212121;
@@ -311,11 +312,11 @@ img{
         transition: all 0.5s ease;
         z-index: 0;
     }
-    .sidebar.open ~ .seccion__body{
+    /* .sidebar.open ~ .seccion__body{
         left: 25rem;
         width: 100%;
-        /* width: calc(100% - 25rem); */
-    }
+        /* width: calc(100% - 25rem);
+    } */
 }
 /* ===== Menu Modal ==== */
 .title__modal{
@@ -597,9 +598,19 @@ h1{
     color: var(--azul__primario) !important;
 }
 /* ===== Mundo VMC ===== */
-
-input[type="text"], input[type="password"] {
+.form__custom{
+    border: 1px solid var(--azul__primario);
+    outline: none;
     font-size: 1.6rem;
+}
+.form__custom:focus{
+    animation: shadow-pulse 1000ms 1;
+    border: 1px solid var(--azul__primario);
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 .btn-outline-dark{
     font-size: 1.6rem;
@@ -652,8 +663,33 @@ input[type="text"], input[type="password"] {
     }
 }
 /* ===== Dashboard ===== */
-.cointainer__dashboard{
-    padding: 5rem 1rem 5rem 0;
+.row{
+    --bs-gutter-x: 0 !important;
+}
+.button__dashboard{
+    padding: 2rem;
+}
+.button__dashboard a{
+    text-align: start;
+    display: block;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: var(--azul__primario);
+    color: var(--azul__terciario);
+    font-size: 1.6rem;
+    border-radius: .9rem;
+}
+.button__dashboard a i{
+    background-color: var(--azul__terciario);
+    color: var(--azul__primario);
+    margin-right: 1.5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.button__dashboard a:hover{
+    animation: shadow-pulse 1000ms 1;
+    background-color: var(--azul__terciario);
+    color: var(--azul__primario);
 }
 .bg__panel{
     background-color: var(--azul__primario);
