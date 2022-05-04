@@ -145,7 +145,102 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12 bg-panel">.</div>
+                <div class="col-lg-3 col-md-12 bg-panel">
+                    <div class="row">
+                        <div class="col-12 p-5">
+                            <div class="">
+                                <style>
+                                    .profile__photo{
+                                        margin: 0 auto;
+                                    }
+                                    .card__content{
+                                        background-color: rgba(255, 255, 255, .5);
+                                        -webkit-backdrop-filter: blur(.5rem);
+                                        backdrop-filter: blur(.5rem);
+                                        border-radius: 1rem;
+                                        border: .2rem solid #ffffff80;
+                                    }
+                                    .card__content .name{
+                                        color: #1F365E;
+                                        font-style: italic;
+                                        font-weight: 700;
+                                        font-size: 1.9rem;
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
+                                    .last__name{
+                                        font-style: italic;
+                                        color: #fff;
+                                        font-size: 1.6rem;
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
+                                    .line3::after{
+                                        
+                                        content: '';
+                                        display: block;
+                                        width: 80%;
+                                        height: .5rem;
+                                        background-color: #1F365E;
+                                        margin: 0 auto;
+                                    }
+                                    .icon__puesto{
+                                        margin: .8rem;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                    .cargo{
+                                        background-color: #1F365E;
+                                        text-align: center;
+                                        font-size: 1.9rem;
+                                        padding: .8rem;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        margin-bottom: 2rem;
+                                        font-style: italic;
+                                    }
+                                    .btn__course{
+                                        text-align: start;
+                                        display: block;
+                                        font-weight: 700;
+                                        padding: 1rem;
+                                        background-color: var(--azul__terciario);
+                                        
+                                        color: var(--azul__primario);
+                                        font-size: 1.6rem;
+                                        border-radius: .9rem;
+                                    }      
+                                </style>
+                                <div class="profile__photo d-flex justify-content-center">
+                                    <img src="assets/profiles/prfile-dulce-mondragon-sanchez.png" width="35%" alt="Foto perfil Dulce Mondragon">
+                                </div>
+                                <div class="card__content">
+                                    <p class="name">Lic. Dulce</spasp>
+                                    <p class="last__name">Mondragon Sanchez
+                                        <span class="line3"></span>
+                                    </p>
+                                    <div class="icon__puesto">
+                                        <img src="assets/icon-area/icono-area-marketing.png" width="15%" alt="Icono marketing">
+                                    </div>
+                                    <h3 class="cargo">Jefe de <br> Marketing</h3>
+                                </div>
+                                <div class="card__footer"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 bg__panel">
+                            <h4>Cursos <br> Disponibles</h4>
+                        </div>
+                        <div class="col-12 p-5">
+                        
+                                <a class="btn mb-5 btn__course" data-bs-toggle="modal" data-bs-target="#modalOrganigrama"><i class="fa-solid fa-sitemap"></i> Organigrama</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Main section or body -->
