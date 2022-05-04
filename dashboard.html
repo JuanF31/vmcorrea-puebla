@@ -126,13 +126,13 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12 bg-textura">
                     <nav class="button__dashboard">
-                        <a class="btn mb-5 btn__option" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-sitemap"></i> Organigrama</a>
-                        <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-users-line"></i> Directorio</a>
+                        <a class="btn mb-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalOrganigrama"><i class="fa-solid fa-sitemap"></i> Organigrama</a>
+                        <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalDirectorio"><i class="fa-solid fa-users-line"></i> Directorio</a>
                         <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-list"></i> Recursos</a>
                         <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-folder-open"></i> Boletín de Proyectos</a>
                         <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-bullhorn"></i> Anuncios</a>
                         <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-book-bookmark"></i> Revista</a>
-                        <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-desktop"></i> Plataformas</a>
+                        <a class="btn mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-desktop"></i> Plataformas</a>
                     </nav>
                 </div>
                 <div class="col-lg-5 col-md-12 bg-dark">.</div>
@@ -304,24 +304,33 @@
         <!-- End Modal menu -->
     </div>
     <!-- End Home section -->
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal -->
+    <div class="modal fade" id="modalOrganigrama" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal Organigrama</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
         </div>
-        <div class="modal-body">
-          ...
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="modal fade" id="modalDirectorio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal Directorio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- Jquery -->
     <script src="js/jquery.min.js"></script>
