@@ -663,11 +663,13 @@ h1{
     }
 }
 /* ===== Dashboard ===== */
+.bg-panel{
+    height: 100vh;
+    background-image: url(/assets/img/textura-panel.png);
+    background-repeat: no-repeat;
+}
 .row{
     --bs-gutter-x: 0 !important;
-}
-.button__dashboard{
-    padding: 2rem;
 }
 .button__dashboard a{
     text-align: start;
