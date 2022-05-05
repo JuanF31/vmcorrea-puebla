@@ -124,7 +124,7 @@
 
         <div class="dashboard">
             <div class="row">
-                <div class="col-lg-3 col-md-12 d-flex justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-12 bg-textura d-flex justify-content-center align-items-center">
                     <nav class="button__dashboard">
                         <a class="btn mb-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalOrganigrama"><i class="fa-solid fa-sitemap"></i> Organigrama</a>
                         <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalDirectorio"><i class="fa-solid fa-users-line"></i> Directorio</a>
@@ -350,7 +350,86 @@
             </div>
         </div>
         <!-- End Modal menu -->
+
+
+
+
+<style>
+    .contenedor{
+        width: 80%;
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .icono-cabecera{
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: -60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icono-valores{
+        width: 100%;
+        object-fit: cover;
+    }
+    .carta{
+        width: 100%;
+        height:100%;
+        border-radius: 30px;
+        border: 4px solid #505d20;
+    }
+    .carta-cabecera{
+        border-radius: 25px 25px 0 0;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .carta-cabecera h2{
+        margin-top: 80px;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+.carta-cuerpo{
+    background-color: #fff;
+    border-radius: 0 0 24px 24px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carta-cuerpo p{
+    margin: 20px 30px;
+    text-align: center;
+    font-size: 18px;
+}
+</style>
+        <div class="contenedor">
+            <div class="icono-cabecera">
+              <img src="assets/profiles/prfile-dulce-mondragon-sanchez.png" alt="Icono responsabilidad"
+              class="icono-valores">
+            </div>
+            <div class="carta">
+              <div class="carta-cabecera">
+                  <h2>responsabilidad</h2>
+              </div>
+              <div class="carta-cuerpo">
+                  <P>
+                    En los acuerdos generados con nuestros clientes, así como con el cumplimiento de nuestros servicios contratados bajo la normatividad de calidad y legal requerida.
+                  </P>
+              </div>
+            </div>
+        </div>
+
+
     </div>
+
     <!-- End Home section -->
     <!-- Modal -->
     <!-- <div class="modal fade" id="modalOrganigrama" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
