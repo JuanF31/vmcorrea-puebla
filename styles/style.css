@@ -663,10 +663,8 @@ h1{
 }
 /* ===== Dashboard ===== */
 .bg-panel{
-    height: 100vh;
     background-image: url(/assets/img/textura-panel.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100vh;
 }
 .row{
     --bs-gutter-x: 0 !important;

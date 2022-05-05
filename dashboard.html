@@ -150,25 +150,36 @@
                         <div class="col-12 p-5">
                             <div class="">
                                 <style>
-                                    .profile__photo{
-                                        margin: 0 auto;
+                                    .contenedor{                    
+                                        display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;
                                     }
-                                    .card__content{
+                                    .icono-cabecera{
+                                        position: relative;
+                                        width: 35%;
+                                        border-radius: 50%;
+                                        margin-bottom: -17.5%;
+                                        
+                                        z-index: 1000;
+                                    }
+
+                                    .carta{
                                         background-color: rgba(255, 255, 255, .5);
                                         -webkit-backdrop-filter: blur(.5rem);
                                         backdrop-filter: blur(.5rem);
                                         border-radius: 1rem;
                                         border: .2rem solid #ffffff80;
                                     }
-                                    .card__content .name{
+                                    .name{
+                                        margin: 18% 0 0 0;
+                                        text-transform: uppercase;
                                         color: #1F365E;
                                         font-style: italic;
                                         font-weight: 700;
                                         font-size: 1.9rem;
-                                        text-transform: uppercase;
                                         text-align: center;
                                         padding: 0;
-                                        margin: 0;
                                     }
                                     .last__name{
                                         font-style: italic;
@@ -180,7 +191,6 @@
                                         margin: 0;
                                     }
                                     .line3::after{
-                                        
                                         content: '';
                                         display: block;
                                         width: 80%;
@@ -194,7 +204,40 @@
                                         align-items: center;
                                         justify-content: center;
                                     }
+                                .carta-cuerpo{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                .carta-cuerpo p{
+                                    text-align: center;
+                                    font-size: 18px;
+                                }
+                                </style>
+                                        <div class="contenedor">
+                                            <div class="icono-cabecera">
+                                              <img src="assets/profiles/prfile-dulce-mondragon-sanchez.png" alt="Icono responsabilidad"
+                                              class="icono-valores">
+                                            </div>
+                                            <div class="carta">
+                                              <div class="carta-cabecera">
+                                                <p class="name">Lic. Dulce</p>
+                                                <p class="last__name">Mondragon Sanchez
+                                                    <span class="line3"></span>
+                                                </p>
+                                                <div class="icon__puesto">
+                                                    <img src="assets/icon-area/icono-area-marketing.png" width="15%" alt="Icono marketing">
+                                                </div>
+                                                <h3 class="cargo">Jefe de <br> Marketing</h3>
+                                              </div>
+                                            </div>
+                                        </div>
+                                <style>
+                                    
+
+
                                     .cargo{
+
                                         background-color: #1F365E;
                                         text-align: center;
                                         font-size: 1.9rem;
@@ -208,84 +251,49 @@
                                         text-align: start;
                                         display: block;
                                         font-weight: 700;
+                                        text-transform: uppercase;
+                                        font-style: italic;
                                         padding: 1rem;
                                         background-color: var(--azul__terciario);
-                                        
                                         color: var(--azul__primario);
                                         font-size: 1.6rem;
                                         border-radius: .9rem;
-                                    }      
+                                    }
+                                    .btn__course i{
+                                        background-color: var(--azul__primario);
+                                        color: var(--azul__terciario);
+                                        margin-right: 1.5rem;
+                                        padding: 1rem;
+                                        border-radius: .5rem;
+                                    } 
+                                    .btn__course:hover{
+                                        animation: shadow-pulse-invertido 1000ms 1;
+                                        background-color: var(--azul__primario);
+                                        color: var(--azul__terciario);
+                                    }
+                                    @keyframes shadow-pulse-invertido {
+                                        0% {
+                                            box-shadow: 0 0 0 0 rgba(238, 243, 255);
+                                        }
+                                        100% {
+                                            box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+                                        }
+                                    }  
                                 </style>
-                                <div class="profile__photo d-flex justify-content-center">
-                                    <img src="assets/profiles/prfile-dulce-mondragon-sanchez.png" width="35%" alt="Foto perfil Dulce Mondragon">
-                                </div>
-                                <div class="card__content">
-                                    <p class="name">Lic. Dulce</spasp>
-                                    <p class="last__name">Mondragon Sanchez
-                                        <span class="line3"></span>
-                                    </p>
-                                    <div class="icon__puesto">
-                                        <img src="assets/icon-area/icono-area-marketing.png" width="15%" alt="Icono marketing">
-                                    </div>
-                                    <h3 class="cargo">Jefe de <br> Marketing</h3>
-                                </div>
-                                <div class="card__footer"></div>
                             </div>
                         </div>
                         <div class="col-12 bg__panel">
                             <h4>Cursos <br> Disponibles</h4>
                         </div>
                         <div class="col-12 p-5">
-                        
-                                <a class="btn mb-5 btn__course" data-bs-toggle="modal" data-bs-target="#modalOrganigrama"><i class="fa-solid fa-sitemap"></i> Organigrama</a>
+                            <a class="btn mb-5 btn__course"><i class="fa-solid fa-thumbtack"></i> Google Analitics</a>
+                            <a class="btn mb-5 btn__course"><i class="fa-solid fa-thumbtack"></i> Facebook Business</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Main section or body -->
-        <!-- <div class="cointainer__dashboard">
-            <div class="row">
-                <div class="col-lg-3 col-md-12 bg-textura">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <div class="nav flex-column nav-pills me-3 dashboard" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            
-                            <a class="nav-link active mt-4 mb-5" id="v-pills-home-tab" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-sitemap"></i>&nbsp; Organigrama</a>
-            
-                            <a class="nav-link active mt-4 mb-5" id="v-pills-home-tab" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-users-line"></i> &nbsp; Directorio</a>
-            
-                            <a class="nav-link active mt-4 mb-5" id="v-pills-home-tab" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-list"></i> &nbsp; Recursos</a>
-            
-                            <a class="nav-link active mt-4 mb-5" id="v-pills-home-tab" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-folder-open"></i> &nbsp; Boletín de Proyectos</a>
-            
-                            <a class="nav-link active mt-4 mb-5" id="v-pills-home-tab" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-bullhorn"></i> &nbsp; Anuncios</a>
-            
-                            <a class="nav-link active mt-4 mb-5" id="v-pills-home-tab" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-bookmark"></i> &nbsp; Revista</a>
-            
-                            <a class="nav-link active mt-4" id="v-pills-home-tab" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-desktop"></i> &nbsp; Plataformas</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-12">
-                    <div class="row">
-                        <div class="col-12 pt-5 flex__box">
-                            <img src="/assets/icons/logo-vmc-principal.png" alt="Icono VMC" width="25%">
-                        </div>
-                        <div class="col-12  pt-5 flex__box">
-                            <iframe width="500" height="315" src="https://www.youtube.com/embed/akAIv5pLJRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 p-0 m-0 ps-3">
-                    <div class="bg__panel">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima similique maiores quia earum dolores unde eveniet, pariatur dolorem in expedita saepe porro suscipit iure magnam exercitationem nisi laborum repellendus accusantium?
-                        Quasi delectus consectetur quas enim minus! Quia labore error ex fuga voluptatibus blanditiis cum unde asperiores saepe? Laboriosam, delectus amet aliquam ea atque quae quod ut, rerum perspiciatis minus magni?
-                        Sunt modi minima molestiae suscipit commodi, aliquid, culpa aliquam porro ipsa impedit animi necessitatibus assumenda tenetur, et quam nesciunt dolorem iure corrupti quas? Nam, officia voluptatibus perspiciatis eius excepturi reiciendis.
-                        Aliquam, doloribus sequi. Numquam laudantium quo porro commodi perspiciatis! Fuga, inventore dolor? Corrupti labore animi magni maxime ducimus veritatis molestia
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <!-- End body -->
         <!-- Modal menu -->
         <div id="myModal" class="menu__modal">
@@ -354,107 +362,21 @@
 
 
 
-<style>
-    .contenedor{
-        width: 80%;
-        height: 85%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .icono-cabecera{
-        position: relative;
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-bottom: -60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .icono-valores{
-        width: 100%;
-        object-fit: cover;
-    }
-    .carta{
-        width: 100%;
-        height:100%;
-        border-radius: 30px;
-        border: 4px solid #505d20;
-    }
-    .carta-cabecera{
-        border-radius: 25px 25px 0 0;
-        width: 100%;
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    .carta-cabecera h2{
-        margin-top: 80px;
-        font-size: 30px;
-        text-transform: uppercase;
-    }
-.carta-cuerpo{
-    background-color: #fff;
-    border-radius: 0 0 24px 24px;
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.carta-cuerpo p{
-    margin: 20px 30px;
-    text-align: center;
-    font-size: 18px;
-}
-</style>
-        <div class="contenedor">
-            <div class="icono-cabecera">
-              <img src="assets/profiles/prfile-dulce-mondragon-sanchez.png" alt="Icono responsabilidad"
-              class="icono-valores">
-            </div>
-            <div class="carta">
-              <div class="carta-cabecera">
-                  <h2>responsabilidad</h2>
-              </div>
-              <div class="carta-cuerpo">
-                  <P>
-                    En los acuerdos generados con nuestros clientes, así como con el cumplimiento de nuestros servicios contratados bajo la normatividad de calidad y legal requerida.
-                  </P>
-              </div>
-            </div>
-        </div>
+
 
 
     </div>
 
     <!-- End Home section -->
     <!-- Modal -->
-    <!-- <div class="modal fade" id="modalOrganigrama" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="button__dashboard">
-                    <div class="btn mb-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalOrganigrama"><i class="fa-solid fa-sitemap"></i> Organigrama</div>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <iframe src="https://publuu.com/flip-book/23869/75842/page/1?embed" width="100%" height="530" scrolling="no" frameborder="0" allowfullscreen="" class="publuuflip"></iframe>
-            </div>
-        </div>
-        </div>
-    </div> -->
+
     <div class="modal fade" id="modalOrganigrama" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="button__title-dashboard  d-flex justify-content-center align-items-center">
-                            <div class="mb-2" data-bs-toggle="" data-bs-target="#"><i class="fa-solid fa-sitemap"></i> Organigrama</div>
+                        <div class="button__title-dashboard">
+                            <div class="title__btn"><i class="fa-solid fa-sitemap"></i> Organigrama</div>
                         </div>
-                        <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal Directorio</h5> -->
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
