@@ -662,9 +662,15 @@ h1{
     }
 }
 /* ===== Dashboard ===== */
+
 .bg-panel{
     background-image: url(/assets/img/textura-panel.png);
-    height: 100vh;
+    height: 100%;
+}
+@media (min-width:992px) {
+    .bg-panel{
+        height: 100vh;
+    }
 }
 .row{
     --bs-gutter-x: 0 !important;
