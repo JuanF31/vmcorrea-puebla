@@ -721,18 +721,14 @@ h1{
     display: block;
     font-weight: 700;
     padding: 1rem;
-    background-color: var(--azul__primario);
-    color: var(--azul__terciario);
+    color: var(--azul__primario);
     font-size: 1.6rem;
-    border-radius: .9rem;
-    width: 20rem !important;
+    text-transform: uppercase;
 }
 .button__title-dashboard i{
-    background-color: var(--azul__terciario);
     color: var(--azul__primario);
     margin-right: 1.5rem;
     padding: 1rem;
-    border-radius: .5rem;
 }
 /* ===== Footer ===== */
 .text__footer{
