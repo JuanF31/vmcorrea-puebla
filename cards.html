@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMCorrea · Inicio</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="assets/icons/logo-vmc.ico" type="image/x-icon"/>
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="styles/normalize.css"/> 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="styles/animate.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="styles/aos.css"/>
+    <!-- Custom Styles CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar close animate__animated">
+        <div class="contenedor__sidebar">
+            <div class="detalles__logo">
+                <i class="fa-solid fa-circle-xmark" id="btn__cerrar"></i>
+            </div>
+
+            <div class="nombre__logo mt-4">
+                <a href="/" class="mt-2 d-flex justify-content-center align-items-center">
+                    <img id="img__logo" src="assets/icons/logo-vmc-principal.png" class="animate__animated animate__fadeInLeft logo__principal" alt="Logo VMCORREA">
+                </a>
+            </div>
+            <nav class="navegacion">
+                <ul class="nav__list animate__animated animate__fadeInLeft" id="navegacion__sidebar">
+                    <li>
+                        <a href="index.html" class="sidebar__active" id="link__home">
+                            <i class="fa-solid fa-house link__active"></i>
+                            <span class="links__name inicio link__active">Inicio</span>
+                        </a>
+                        <span class="tooltip">Inicio</span>
+                    </li>
+                    <li>
+                        <a href="nosotros.html" class="sidebar__active" id="link__nosotros">
+                            <i class="fa-solid fa-users link__active"></i>
+                            <span class="links__name nosotros link__active">Nosotros</span>
+                        </a>
+                        <span class="tooltip">Nosotros</span>
+                    </li>
+                    <!-- Items for services -->
+                    <li class="responsibe__servicios">
+                        <a href="#" id="btn__servicios__dropdown">
+                            <div class="">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <span class="links__name">Servicios</span>
+                            </div>
+                            <i class="fa-solid fa-angle-right dropdown"></i>
+                        </a>
+                        <div class="sub__menu__responsive">
+                            <a href="riggin.html">Rigging</a>
+                            <a href="automatizacion.html">Automatización</a>
+                            <a href="industria.html">Industria 4.0</a>
+                            <a href="maquinados.html">Maquinados</a>
+                            <a href="seguridad_industrial.html">Seguridad Industrial</a>
+                            <a href="mtto_general.html">Mantenimiento General</a>
+                            <a href="mtto_industrial.html">Mantenimiento Industrial</a>
+                        </div>
+                    </li>
+                    <li class="desktop__servicio">
+                        <a href="" id="servicios__modal" class="sidebar__active">
+                            <i class="fa-solid fa-screwdriver-wrench wrench link__active"></i>
+                            <span class="links__name servicio link__active">Servicios</span>
+                        </a>
+                        <span class="tooltip">Servicios</span>
+                    </li>
+                    <!-- End Items for services -->
+                    <li>
+                        <a href="proyectos.html" class="sidebar__active" id="link__proyectos">
+                            <i class="fa-solid fa-folder-open folder link__active"></i>
+                            <span class="links__name proyecto link__active">Proyectos</span>
+                        </a>
+                        <span class="tooltip">Proyectos</span>
+                    </li>
+                    <li>
+                        <a href="mundovmc.html" class="sidebar__active" id="link__mundovmc">
+                            <i class="fa-solid earth fa-earth-americas link__active"></i>
+                            <span class="links__name vmc link__active">Mundo VMC</span>
+                        </a>
+                        <span class="tooltip">Mundo VMC</span>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="sidebar__active" id="link__contacto">
+                            <i class="fa-solid book fa-address-book link__active"></i>
+                            <span class="links__name contacto link__active">Contacto</span>
+                        </a>
+                        <span class="tooltip">Contacto</span>
+                    </li>
+                    <li>
+                        <a href="catalogos.html" class="sidebar__active" id="link__catalogos">
+                            <i class="fa-solid open__book fa-book-open link__active"></i>
+                            <span class="links__name catalogo link__active">Catálogos</span>
+                        </a>
+                        <span class="tooltip">Catálogos</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+    <!-- header -->
+    <header class="header__container">
+        <div class="barra">
+            <div class="btn__menu" id="btn__abrir">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <div class="seccion__body">
+        <div class="row dashboard">
+            <style>
+
+                @media (min-width:992px) {
+                    .dashboard{
+                        position: fixed;
+                        flex-direction: row-reverse;
+                    }
+                    .panel{
+                    height: 100vh;
+                    overflow: auto;
+                    }
+                    .panel::-webkit-scrollbar {display: none;}
+                }
+
+                
+                .bg-buttons{
+                    background-image: url(/assets/img/textura.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .bg-dashboard{
+                    background-image: url(/assets/img/textura-panel.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            </style>
+            <div class="col-xl-3 col-lg-3 col-md-12 bg-dashboard panel">
+                <div class="row">
+                    <div class="col-12 p-5">
+                        <div class="">
+                            <style>
+                                .contenedor{                    
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-wrap: wrap;
+                                }
+                                .icono-cabecera{
+                                    position: relative;
+                                    width: 35%;
+                                    border-radius: 50%;
+                                    margin-bottom: -17.5%;
+                                    
+                                    z-index: 1;
+                                }
+
+                                .carta{
+                                    background-color: rgba(255, 255, 255, .5);
+                                    -webkit-backdrop-filter: blur(.5rem);
+                                    backdrop-filter: blur(.5rem);
+                                    border-radius: 1rem;
+                                    border: .2rem solid #ffffff80;
+                                }
+                                .name{
+                                    margin: 18% 0 0 0;
+                                    text-transform: uppercase;
+                                    color: #1F365E;
+                                    font-style: italic;
+                                    font-weight: 700;
+                                    font-size: 2.1rem;
+                                    text-align: center;
+                                    padding: 0;
+                                }
+                                .last__name{
+                                    font-style: italic;
+                                    color: #fff;
+                                    font-size: 1.5rem;
+                                    text-transform: uppercase;
+                                    text-align: center;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                                .line3::after{
+                                    content: '';
+                                    display: block;
+                                    width: 80%;
+                                    height: .5rem;
+                                    background-color: #1F365E;
+                                    margin: 0 auto;
+                                }
+                                .icon__puesto{
+                                    margin: .8rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            .carta-cuerpo{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .carta-cuerpo p{
+                                text-align: center;
+                                font-size: 18px;
+                            }
+                            </style>
+                                    <div class="contenedor">
+                                        <div class="icono-cabecera">
+                                          <img src="assets/profiles/prfile-dulce-mondragon-sanchez.png" alt="Icono responsabilidad"
+                                          class="icono-valores">
+                                        </div>
+                                        <div class="carta">
+                                          <div class="carta-cabecera">
+                                            <h3 class="name">Lic. Dulce</h3>
+                                            <h3 class="last__name">Mondragon Sanchez
+                                                <span class="line3"></span>
+                                            </h3>
+                                            <div class="icon__puesto">
+                                                <img src="assets/icon-area/icono-area-marketing.png" width="15%" alt="Icono marketing">
+                                            </div>
+                                            <h3 class="cargo">Jefe de <br> Marketing</h3>
+                                          </div>
+                                        </div>
+                                    </div>
+                            <style>
+                                
+
+
+                                .cargo{
+
+                                    background-color: #1F365E;
+                                    text-align: center;
+                                    font-size: 1.9rem;
+                                    padding: .8rem;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    margin-bottom: 2rem;
+                                    font-style: italic;
+                                }
+                                .btn__course{
+                                    text-align: start;
+                                    display: block;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    font-style: italic;
+                                    padding: 1rem;
+                                    background-color: var(--azul__terciario);
+                                    color: var(--azul__primario);
+                                    font-size: 1.6rem;
+                                    border-radius: .9rem;
+                                }
+                                .btn__course i{
+                                    background-color: var(--azul__primario);
+                                    color: var(--azul__terciario);
+                                    margin-right: 1.5rem;
+                                    padding: 1rem;
+                                    border-radius: .5rem;
+                                } 
+                                .btn__course:hover{
+                                    animation: shadow-pulse-invertido 1000ms 1;
+                                    background-color: var(--azul__primario);
+                                    color: var(--azul__terciario);
+                                }
+                                @keyframes shadow-pulse-invertido {
+                                    0% {
+                                        box-shadow: 0 0 0 0 rgba(238, 243, 255);
+                                    }
+                                    100% {
+                                        box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+                                    }
+                                }  
+                            </style>
+                        </div>
+                    </div>
+                    <div class="col-12 bg__panel">
+                        <h4>Cursos <br> Disponibles</h4>
+                    </div>
+                    <div class="col-12 p-5">
+                        <a class="btn mb-4 btn__course"><i class="fa-solid fa-thumbtack"></i> Google Analitics</a>
+                        <a class="btn mb-4 btn__course"><i class="fa-solid fa-thumbtack"></i> Facebook Business</a>
+                        <a class="btn mb-4 btn__course"><i class="fa-solid fa-thumbtack"></i> Marketing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 p-5 panel flex__box">
+                <div class="row">
+                    <div class="col-12 mt-5 mb-5 flex__box">
+                        <img src="/assets/icons/logo-vmc-principal.png" alt="Icono VMC" width="30%">
+                    </div>
+                    <div class="col-12 flex__box">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/akAIv5pLJRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-12 p-5 panel bg-buttons flex__box">
+                <nav class="button__dashboard">
+                    <a class="btn mb-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalOrganigrama"><i class="fa-solid fa-sitemap"></i> Organigrama</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalDirectorio"><i class="fa-solid fa-users-line"></i> Directorio</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalRecursos"><i class="fa-solid fa-list"></i> Recursos</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalBoletin"><i class="fa-solid fa-folder-open"></i> Boletín de Proyectos</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalAnuncios"><i class="fa-solid fa-bullhorn"></i> Anuncios</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalRevista"><i class="fa-solid fa-book-bookmark"></i> Revista</a>
+                    <a class="btn mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalPlataformas"><i class="fa-solid fa-desktop"></i> Plataformas</a>                
+                </nav>
+            </div>
+        </div>
+
+        <!-- Modal menu -->
+        <div id="myModal" class="menu__modal">
+                    <div class="menu__modal__content">
+                        <div class="menu__modal__header">
+                            <span class="close__modal">&times;</span>
+                            <h2 class="title__modal display-5">Servicios</h2>
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                        <div class="modal__body mt-0 m-2 row">
+                            <div class="col-3 d-flex justify-content-center align-items-center p-0">
+                                <div class="image__container d-flex justify-content-center align-items-center">
+                                    <img id="img__default" src="assets/icons/servicios.png" width="60%" alt="Icono Servicios" class="animate__zoomIn animate__animated">
+        
+                                    <img id="ico__riggin" src="assets/icons/Riggin-tiny.png" width="60%" alt="Icono Riggin" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="ico__automatizacion" src="assets/icons/automatizacion-tiny.png" width="60%" alt="Icono Automatización" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="ico__industrial" src="assets/icons/industrial-tiny.png" width="60%" alt="Icono Industria 4.0" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="ico__maquinados" src="assets/icons/maquinados-tiny.png" width="60%" alt="Icono Maquinados" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="ico__seguridad" src="assets/icons/seguridad-tiny.png" width="60%" alt="Icono Seguridad Industrial" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="ico__mgeneral" src="assets/icons/mantenimiento-tiny.png" width="60%" alt="Icono Mantenimiento General" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="ico__mindustrial" src="assets/icons/mantenimientoInd-tiny.png" width="60%" alt="Icono Mantenimiento Industrial" class="d-none animate__zoomIn animate__animated">
+                                </div>
+                            </div>
+                            <div class="col-4 p-0">
+                                <ul class="sub__menu">
+                                    <li><a class="mega__link" href="riggin.html">Riggin</a></li>
+                                    <li><a class="mega__link" href="automatizacion.html">Automatización</a></li>
+                                    <li><a class="mega__link" href="industria.html">Industria 4.0</a></li>
+                                    <li><a class="mega__link" href="maquinados.html">Maquinados</a></li>
+                                    <li><a class="mega__link" href="seguridad_industrial.html">Seguridad Industrial</a></li>
+                                    <li><a class="mega__link" href="mtto_general.html">Mantenimiento General</a></li>
+                                    <li><a class="mega__link" href="mtto_industrial.html">Mantenimiento Industrial</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-5 d-flex justify-content-center align-items-center p-0">
+                                <div class="image__container d-flex justify-content-center align-items-center">
+                                    <img id="ico__default" src="assets/img/img-servicios.png" width="40%" alt="Imagen Servicios" class="animate__zoomIn animate__animated">
+        
+                                    <img id="img__riggin" src="assets/img/img-riggin.png" width="60%" alt="Imagen alusiva al servicio Riggin" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="img__automatizacion" src="assets/img/img-automatizacion.png" width="60%" alt="Imagen alusiva al servicio Automatización" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="img__industrial" src="assets/img/img-industria.png" width="70%" alt="Imagen alusiva al servicio Industria 4.0" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="img__maquinados" src="assets/img/img-maquinados.png" width="25%" alt="Imagen alusiva al servicio Maquinados" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="img__seguridad" src="assets/img/img-seguridad.png" width="60%" alt="Imagen alusiva al servicio Seguridad Industrial" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="img__mgeneral" src="assets/img/img-mtto-gral.png" width="40%" alt="Imagen alusiva al servicio Mantenimiento General" class="d-none animate__zoomIn animate__animated">
+                
+                                    <img id="img__mindustrial" src="assets/img/img-mtto-ind.png" width="60%" alt="Imagen alusiva al Mantenimiento Industrial" class="d-none animate__zoomIn animate__animated">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <!-- End Modal menu -->
+    </div>
+
+
+
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>
