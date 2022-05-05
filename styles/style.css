@@ -712,8 +712,8 @@ h1{
 }
 
 /* ===== Button ===== */
-.button__title-dashboard div{
-    text-align: start;
+.button__title-dashboard{
+    text-align: center;
     display: block;
     font-weight: 700;
     padding: 1rem;
@@ -721,8 +721,9 @@ h1{
     color: var(--azul__terciario);
     font-size: 1.6rem;
     border-radius: .9rem;
+    width: 20rem !important;
 }
-.button__title-dashboard div i{
+.button__title-dashboard i{
     background-color: var(--azul__terciario);
     color: var(--azul__primario);
     margin-right: 1.5rem;
