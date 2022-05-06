@@ -4,7 +4,7 @@
 :root{
     --azul__primario: #1F365E;
     --azul__secudario: #006D83;
-    --azul__terciario: #EEF3FF;
+    --azul__terciario: #ECF2FF;
     --blanco: #FFF;
     --gris: #888;
     --negro: #212121;
@@ -662,23 +662,14 @@ h1{
     }
 }
 /* ===== Dashboard ===== */
-
-.bg-panel{
-    background-image: url(/assets/img/textura-panel.png);
-    height: 1000vh;
-}
-@media (min-width:992px) {
-    .bg-panel{
-        height: 100%;
-    }
-}
 .row{
     --bs-gutter-x: 0 !important;
 }
 .button__dashboard a{
     text-align: start;
+    font-style: italic;
     display: block;
-    font-weight: 700;
+    font-weight:600;
     padding: 1rem;
     background-color: var(--azul__primario);
     color: var(--azul__terciario);
@@ -720,15 +711,9 @@ h1{
     text-align: center;
     display: block;
     font-weight: 700;
-    padding: 1rem;
     color: var(--azul__primario);
     font-size: 1.6rem;
     text-transform: uppercase;
-}
-.button__title-dashboard i{
-    color: var(--azul__primario);
-    margin-right: 1.5rem;
-    padding: 1rem;
 }
 /* ===== Footer ===== */
 .text__footer{
