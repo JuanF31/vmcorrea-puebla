@@ -679,7 +679,7 @@ h1{
 .button__dashboard a i{
     background-color: var(--azul__terciario);
     color: var(--azul__primario);
-    margin-right: 1.5rem;
+    margin-right: .5rem;
     padding: 1rem;
     border-radius: .5rem;
 }
