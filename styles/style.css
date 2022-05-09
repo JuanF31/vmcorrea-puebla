@@ -665,6 +665,9 @@ h1{
 .row{
     --bs-gutter-x: 0 !important;
 }
+.button__dashboard{
+    text-overflow: ellipsis;
+}
 .button__dashboard a{
     text-align: start;
     font-style: italic;
