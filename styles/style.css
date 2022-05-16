@@ -665,15 +665,27 @@ h1{
 .row{
     --bs-gutter-x: 0 !important;
 }
+.panel{
+    height: 100%;
+}
 @media (min-width:992px) {
     .dashboard{
+        /* position: fixed; */
         flex-direction: row-reverse;
     }
     .panel{
         height: auto;
-        /* overflow: auto; */
     }
 }
+@media (min-width:1504px) {
+    .panel{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.panel::-webkit-scrollbar {display: none;}
 .bg-buttons{
     background-image: url(/assets/img/textura.png);
     background-repeat: no-repeat;
@@ -738,7 +750,17 @@ h1{
     align-items: center;
     justify-content: center;
 }
+/* .carta-cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carta-cuerpo p{
+    text-align: center;
+    font-size: 18px;
+} */
 .cargo{
+
     background-color: var(--azul__primario);
     text-align: center;
     font-size: 1.9rem;
@@ -759,6 +781,7 @@ h1{
     color: var(--azul__primario);
     font-size: 1.6rem;
     border-radius: .9rem;
+
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -783,12 +806,6 @@ h1{
         box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
     }
 }  
-
-
-
-
-
-
 .button__dashboard a{
     text-align: start;
     font-style: italic;
@@ -890,4 +907,3 @@ h1{
     font-size: 1.6rem;
 }
 .block-scroll {overflow:hidden;}
-
