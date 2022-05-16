@@ -120,20 +120,74 @@
     </header>
     <!-- End header -->
 
-    <div class="seccion__body ">
-        <div class="row">
-            <style>
-                .panel{
-                    height: 100vh;
-                }
-            </style>
-            <div class="col-3 bg-danger panel">.</div>
-            <div class="col-6 bg-success">-</div>
-            <div class="col-3 bg-info">.</div>
+    <div class="seccion__body">
+        <div class="row dashboard">
+            <div class="col-xl-3 col-lg-3 col-md-12 pt-2 bg-dashboard panel">
+                <div class="row">
+                    <div class="col-12 p-5">
+                        <div class="contenedor">
+                            <div class="icono-cabecera">
+                                <img src="assets/profiles/prfile-dulce-mondragon-sanchez.png" alt="Profile photo Dulce Mondragon" class="icono-valores">
+                            </div>
+                            <div class="carta">
+                                <div class="carta-cabecera">
+                                    <h3 class="name">Lic. Dulce</h3>
+                                    <h3 class="last__name">Mondragon Sanchez
+                                        <span class="line3"></span>
+                                    </h3>
+                                    <div class="icon__puesto">
+                                        <img src="assets/icon-area/icono-area-marketing.png" width="15%" alt="Icono marketing">
+                                    </div>
+                                    <h3 class="cargo">Jefe de <br> Marketing</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 bg__panel">
+                        <h4>Cursos <br> Disponibles</h4>
+                    </div>
+                    <div class="col-12 p-5">
+                        <a class="btn mb-4 btn__course"><i class="fa-solid fa-thumbtack"></i> Google Analitics</a>
+                        <a class="btn mb-4 btn__course"><i class="fa-solid fa-thumbtack"></i> Facebook Business</a>
+                        <a class="btn mb-4 btn__course"><i class="fa-solid fa-thumbtack"></i> Marketing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 p-5 panel">
+                <div class="row">
+                    <div class="col-12 mt-5 mb-5 flex__box">
+                        <img src="/assets/icons/logo-vmc-principal.png" alt="Icono VMC" width="30%">
+                    </div>
+                    <div class="col-12 flex__box">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/akAIv5pLJRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 p-5 bg-buttons pane flex__box">
+                <nav class="button__dashboard">
+                    <a class="btn mb-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalOrganigrama"><i class="fa-solid fa-sitemap"></i> Organigrama</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalDirectorio"><i class="fa-solid fa-users-line"></i> Directorio</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalRecursos"><i class="fa-solid fa-list"></i> Recursos</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalBoletin"><i class="fa-solid fa-folder-open"></i> Proyectos</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalAnuncios"><i class="fa-solid fa-bullhorn"></i> Anuncios</a>
+                    <a class="btn mb-5 mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalRevista"><i class="fa-solid fa-book-bookmark"></i> Revista</a>
+                    <a class="btn mt-5 btn__option" data-bs-toggle="modal" data-bs-target="#modalPlataformas"><i class="fa-solid fa-desktop"></i> Plataformas</a>                
+                </nav>
+            </div>
         </div>
-        <footer>
-            Hola
+
+        <!-- Footer section -->
+        <footer class="sitio__footer bg-dark">
+            <div class="copy">
+                <p>&copy; VMCorrea 2022 | Todos los derechos reservados</p>
+                <div class="text-center pb-3">
+                    <a class="text-white" href="aviso_privacidad.html">Aviso de privacidad</a>
+                </div>
+            </div>
         </footer>
+        <!-- End footer section -->
+
+
         <!-- Modal menu -->
         <div id="myModal" class="menu__modal">
                     <div class="menu__modal__content">
