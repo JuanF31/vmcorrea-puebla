@@ -648,6 +648,10 @@ h1{
     transition: all 500ms ease;
     z-index: -1;
 }
+.btn__3{
+    text-decoration: none;
+    text-align: center;
+}
 .btn__3:hover {
     animation: shadow-pulse 1000ms 1;
     background-color: var(--azul__primario);
